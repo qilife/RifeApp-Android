@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        android:title="@string/action_logout" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        android:title="@string/action_about" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/action_donate"
+        android:orderInCategory="99"
+        app:showAsAction="never"
+        android:title="@string/action_donate_string" />
+    <item
+        android:id="@+id/action_zamplifier"
+        android:orderInCategory="98"
+        app:showAsAction="never"
+        android:title="@string/action_zamplifier" />
+    <item
+        android:id="@+id/action_player"
+        android:orderInCategory="97"
+        app:showAsAction="never"
+        android:title="@string/action_player" />
+</menu>

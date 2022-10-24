@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "159527058747",
+    "firebase_url": "https://rifeconsole.firebaseio.com",
+    "project_id": "rifeconsole",
+    "storage_bucket": "rifeconsole.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159527058747:android:5f8d40c11cb435a5bbcb1e",
+        "android_client_info": {
+          "package_name": "com.zappkit.zappid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159527058747-oabl51f03lsc50oa8rhbucil7kb5f4i9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zappkit.zappid",
+            "certificate_hash": "94d2375e53c4fa7c4979882299d2eca3d8f082ac"
+          }
+        },
+        {
+          "client_id": "159527058747-nj9ibh4qsm8hc4bo5nikhbbso390i6bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMARGlz9HEwt-DNil5xERO84BbS9Tk9as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159527058747-nj9ibh4qsm8hc4bo5nikhbbso390i6bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

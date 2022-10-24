@@ -1,0 +1,69 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="height_image_tabbar">64dp</dimen>
+    <dimen name="width_text_tabbar">50dp</dimen>
+    <dimen name="width_text_tabbar_2">54dp</dimen>
+    <dimen name="height_text_tabbar">18dp</dimen>
+
+
+    <dimen name="dp_3">6dp</dimen>
+    <dimen name="dp_5">7.5dp</dimen>
+    <dimen name="dp_7">10.5dp</dimen>
+    <dimen name="dp_10">15dp</dimen>
+    <dimen name="dp_15">22dp</dimen>
+    <dimen name="dp_20">30dp</dimen>
+    <dimen name="dp_25">37.5dp</dimen>
+    <dimen name="dp_30">45dp</dimen>
+    <dimen name="dp_40">60dp</dimen>
+    <dimen name="dp_50">75dp</dimen>
+    <dimen name="dp_60">130dp</dimen>
+    <dimen name="dp_100">160dp</dimen>
+    <dimen name="dp_105">170dp</dimen>
+    <dimen name="dp_110">180dp</dimen>
+    <dimen name="dp_120">220dp</dimen>
+    <dimen name="dp_180">270dp</dimen>
+    <dimen name="dp_170">260dp</dimen>
+    <dimen name="dp_150">250dp</dimen>
+    <dimen name="dp_220">330dp</dimen>
+    <dimen name="dp_250">375dp</dimen>
+    <dimen name="dp_300">450dp</dimen>
+
+    <dimen name="button_50">130dp</dimen>
+    <dimen name="padding_dialog_30">40dp</dimen>
+    <dimen name="text_size_16">24sp</dimen>
+    <!--<dimen name="height_image_tabbar">60dp</dimen>-->
+
+    <dimen name="text_size_30">40sp</dimen>
+    <dimen name="text_size_27">36sp</dimen>
+    <dimen name="text_size_24">32sp</dimen>
+    <dimen name="text_size_22">30sp</dimen>
+    <dimen name="text_large_20">26sp</dimen>
+    <dimen name="text_large_17">25sp</dimen>
+    <dimen name="text_medium_16">24sp</dimen>
+    <dimen name="text_medium_15">23sp</dimen>
+    <dimen name="text_small_14">22sp</dimen>
+    <dimen name="text_small_13">21sp</dimen>
+    <dimen name="text_small_12">20sp</dimen>
+    <dimen name="text_small_11">19sp</dimen>
+    <dimen name="text_small_10">15sp</dimen>
+    <dimen name="text_small_9">13sp</dimen>
+    <dimen name="text_small_8">12sp</dimen>
+    <dimen name="height_button">64dp</dimen>
+    <dimen name="padding_icon_actionbar">12dp</dimen>
+
+    <dimen name="height_btn_menu">54dp</dimen>
+    <dimen name="height_btn_menu_haft">-27dp</dimen>
+    <dimen name="margin_list_player">80dp</dimen>
+
+    <dimen name="height_btn_setting">81dp</dimen>
+    <dimen name="height_calander_icon">30dp</dimen>
+    <dimen name="text_size_20">30sp</dimen>
+    <dimen name="padding_left_right_item">20dp</dimen>
+    <dimen name="text_size_23">34sp</dimen>
+    <dimen name="text_size_small_6">13sp</dimen>
+    <dimen name="text_size_40">55sp</dimen>
+</resources>

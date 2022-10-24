@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/editnewplaylistname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10.0dip"
+        android:ems="10"
+        android:hint="@string/myPlaylistAddNameHint"
+        android:inputType="text"
+        android:textSize="36sp" />
+
+
+    <TextView
+        android:layout_margin="2dp"
+        android:text="@string/line"
+        android:layout_width="wrap_content"
+        android:textSize="36sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_2"
+        android:layout_below="@+id/editnewplaylistnotes"/>
+    <EditText
+        android:id="@+id/editnewplaylistnotes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editnewplaylistname"
+        android:layout_marginTop="10.0dip"
+        android:ems="10"
+        android:hint="@string/myPlaylistAddNotesHint"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:textSize="37sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7c22a9">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#7c22a9"
+            android:clickable="true"
+            android:onClick="cancel_playlist_add"
+            android:padding="5.0dip"
+            android:text="@string/myPlaylistCancel"
+            android:textColor="#ffffffff"
+            android:textSize="38sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#7c22a9"
+            android:clickable="true"
+            android:onClick="add_nameandnotes_clicked"
+            android:padding="5.0dip"
+            android:text="@string/myPlaylistNext"
+            android:textColor="#ffffffff"
+            android:textSize="38sp" />
+    </RelativeLayout>
+</RelativeLayout>

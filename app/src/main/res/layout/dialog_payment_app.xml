@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_dialog_30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical">
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="Activate Your FREE Trial"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:textSize="@dimen/text_small_14"
+            font:fontText="font_helvetica_neue_bold.ttf" />
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/txt_message_billing_1"
+            android:textColor="#222222"
+            android:textSize="@dimen/text_small_14"
+            font:fontText="font_helvetica_neue.ttf" />
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/txt_message_billing_2"
+            android:textColor="#222222"
+            android:textSize="@dimen/text_small_14"
+            font:fontText="font_helvetica_neue.ttf" />
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/txt_message_billing_3"
+            android:textColor="#222222"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/text_small_14"
+            font:fontText="font_helvetica_neue.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7B52AB"
+            android:orientation="horizontal">
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_font_button_not_selected"
+                android:gravity="center"
+                android:text="@string/txt_7_free_day"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_font_button_not_selected"
+                android:gravity="center"
+                android:text="LATER"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

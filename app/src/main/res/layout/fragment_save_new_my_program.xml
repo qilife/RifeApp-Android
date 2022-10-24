@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/vHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" />
+
+    <com.zappkit.zappid.views.CustomFontButton
+        android:id="@+id/mySeqAddFreqBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vHeader"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_font_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/tv_add_frequencies"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <RelativeLayout
+        android:id="@+id/mySeqButtonBorderBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#7b52ab">
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:id="@+id/backToNameAndNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bg_font_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="backToNameAndNotes"
+            android:padding="@dimen/dp_10"
+            android:text="@string/tv_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_14"
+            android:textStyle="bold"
+            font:fontText="font_helvetica_neue_bold.otf" />
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:id="@+id/mySequenceAddSequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bg_font_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="addSequenceToMySequences"
+            android:padding="@dimen/dp_10"
+            android:text="@string/tv_save"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_14"
+            android:textStyle="bold"
+            font:fontText="font_helvetica_neue_bold.otf"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mySequenceFreqList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mySeqButtonBorderBottom"
+        android:layout_below="@+id/mySeqAddFreqBtn" />
+</RelativeLayout>

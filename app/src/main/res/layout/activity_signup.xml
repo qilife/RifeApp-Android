@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sh_bg_tab"
+    tools:context=".SignupActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_25"
+                android:layout_marginBottom="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <com.zappkit.zappid.views.CustomFontTextView
+                    android:id="@+id/mTvTitleTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/dp_7"
+                    android:text="@string/tv_sign_up"
+                    android:textColor="@color/color_title_text"
+                    android:textSize="@dimen/text_large_20"
+                    font:fontText="fonts/font_helvetica_neue_bold.ttf" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="@dimen/dp_110"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:src="@mipmap/ic_launcher"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:id="@+id/mViewRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/mViewEdNameRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:orientation="vertical">
+
+                        <com.zappkit.zappid.views.CustomFontEditText
+                            android:id="@+id/mEdNameRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textColor="@color/color_text"
+                            android:textColorHint="@color/color_text"
+                            font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2.5dp"
+                            android:contentDescription="@string/tv_email"
+                            android:src="@drawable/bg_line_edittext" />
+                    </LinearLayout>
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_7"
+                        android:text="@string/tv_name"
+                        android:textColor="@color/color_title_text"
+                        android:textSize="@dimen/text_small_14"
+                        font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                    <LinearLayout
+                        android:id="@+id/mViewEdEmailRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:orientation="vertical">
+
+                        <com.zappkit.zappid.views.CustomFontEditText
+                            android:id="@+id/mEdEmailRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/color_text"
+                            android:textColorHint="@color/color_text"
+                            font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2.5dp"
+                            android:contentDescription="@string/tv_email"
+                            android:src="@drawable/bg_line_edittext" />
+                    </LinearLayout>
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_7"
+                        android:text="@string/tv_email"
+                        android:textColor="@color/color_title_text"
+                        android:textSize="@dimen/text_small_14"
+                        font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                    <LinearLayout
+                        android:id="@+id/mViewEdPasswordRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:orientation="vertical">
+
+                        <com.zappkit.zappid.views.CustomFontEditText
+                            android:id="@+id/mEdPasswordRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:textColor="@color/color_text"
+                            android:textColorHint="@color/color_text"
+                            font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2.5dp"
+                            android:contentDescription="@string/tv_password"
+                            android:src="@drawable/bg_line_edittext" />
+                    </LinearLayout>
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_7"
+                        android:text="@string/tv_password"
+                        android:textColor="@color/color_title_text"
+                        android:textSize="@dimen/text_small_14"
+                        font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                    <LinearLayout
+                        android:id="@+id/mViewEdConfirmPasswordRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:orientation="vertical">
+
+                        <com.zappkit.zappid.views.CustomFontEditText
+                            android:id="@+id/mEdConfirmPasswordRegister"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:textColor="@color/color_text"
+                            android:textColorHint="@color/color_text"
+                            font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="2.5dp"
+                            android:contentDescription="@string/tv_confirm_password"
+                            android:src="@drawable/bg_line_edittext" />
+                    </LinearLayout>
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_7"
+                        android:text="@string/tv_confirm_password"
+                        android:textColor="@color/color_title_text"
+                        android:textSize="@dimen/text_small_14"
+                        font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:id="@+id/mBtnGetStartedRegister"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/bg_font_button"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/padding_left_right_item"
+                        android:paddingBottom="@dimen/padding_left_right_item"
+                        android:text="@string/tv_get_started"
+                        android:textColor="@color/color_title_white"
+                        android:textSize="@dimen/text_small_13"
+                        font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp_7">
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_signIn"
+                            android:textColor="@color/color_title_text"
+                            android:textSize="@dimen/text_small_14"
+                            font:fontText="fonts/MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:id="@+id/mTvSignIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:text="@string/tv_link_sign_in"
+                            android:textColor="@color/color_title_text"
+                            android:textSize="@dimen/text_small_14"
+                            font:fontText="fonts/MyriadPro_Bold.otf" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/mImvDismiss"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="start"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="@dimen/item_offset"-->
+            <!--                android:src="@drawable/ic_dismiss" />-->
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

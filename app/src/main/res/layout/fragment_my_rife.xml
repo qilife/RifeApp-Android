@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:round_image="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/imv_my_program"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <com.zappkit.zappid.views.RoundedConnerImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_gravity="center"
+                android:contentDescription="@string/tv_my_programs"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_myprograms_active"
+                round_image:border_color="@android:color/white"
+                round_image:border_width="1dp"
+                round_image:corner_radius="@dimen/dp_10" />
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="@dimen/height_btn_menu"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_btn_menu_haft"
+                android:background="@drawable/bg_font_main_menu"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/tv_my_programs"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_14"
+                android:textStyle="bold"
+                font:fontText="font_helvetica_neue.ttf" />
+        </LinearLayout>
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:text="@string/tv_title_my_program_to_my_rife"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_small_10"
+            android:visibility="gone"
+            font:fontText="font_helvetica_neue.ttf" />
+
+        <LinearLayout
+            android:id="@+id/imv_my_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.zappkit.zappid.views.RoundedConnerImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_gravity="center"
+                android:contentDescription="@string/tv_my_frequencies"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_myfreq_active"
+                round_image:border_color="@android:color/white"
+                round_image:border_width="1dp"
+                round_image:corner_radius="@dimen/dp_10" />
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="@dimen/height_btn_menu"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_btn_menu_haft"
+                android:background="@drawable/bg_font_main_menu"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/tv_my_frequencies"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_14"
+                android:visibility="gone"
+                android:textStyle="bold"
+                font:fontText="font_helvetica_neue.ttf" />
+        </LinearLayout>
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/tv_title_my_frequency_to_my_rife"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_small_10"
+            font:fontText="font_helvetica_neue.ttf" />
+
+        <LinearLayout
+            android:id="@+id/imv_my_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <com.zappkit.zappid.views.RoundedConnerImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_gravity="center"
+                android:contentDescription="@string/tv_my_playlist"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_my_playlist"
+                round_image:border_color="@android:color/white"
+                round_image:border_width="1dp"
+                round_image:corner_radius="@dimen/dp_10" />
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="@dimen/height_btn_menu"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_btn_menu_haft"
+                android:background="@drawable/bg_font_main_menu"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="@dimen/dp_5"
+                android:text="@string/tv_my_playlist"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_14"
+                android:textStyle="bold"
+                font:fontText="font_helvetica_neue.ttf" />
+        </LinearLayout>
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/tv_title_my_playlist_to_my_rife"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_small_10"
+            font:fontText="font_helvetica_neue.ttf" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

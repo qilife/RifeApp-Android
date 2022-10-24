@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+
+    <TextView
+        android:id="@+id/playlist_notes_cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:text="@string/playlistNotesCursor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/playlist_notes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip"
+        android:text="@string/playlistNotes" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4.0dip"
+        android:background="#7c22a9"
+        android:onClick="playPlaylistButton"
+        android:text="@string/playlistPlayBtn"
+        android:textColor="#ffffffff" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+
+    <ListView
+        android:id="@+id/playlist_sequences_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

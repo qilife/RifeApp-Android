@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@android:color/white" />
+
+    <com.zappkit.zappid.views.CustomFontButton
+        android:id="@+id/mySequences_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_font_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/tv_add_a_new_program"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <ListView
+        android:id="@+id/sequence_list_myzapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/mySeqNoContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:textColor="@color/color_text"
+        android:text="@string/noContentFreq"
+        android:textSize="@dimen/text_small_14" />
+</LinearLayout>

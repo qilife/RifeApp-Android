@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nv"
+        layout="@layout/layout_navigation"
+        font:layout_constraintEnd_toEndOf="parent"
+        font:layout_constraintStart_toStartOf="parent"
+        font:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        font:layout_constraintEnd_toEndOf="parent"
+        font:layout_constraintStart_toStartOf="parent"
+        font:layout_constraintTop_toBottomOf="@id/nv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="MissingDefaultResource">
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="Auto-Renewable Subscription Info:"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_price_7_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="• 7 day free trial, then $29.99 per month"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_price_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="• 1 Month subscription - $24.99 per month"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_price_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="• Annual subscription - $199.99 per year"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_about_subscribe"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_link_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_about_subscribe_1"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_link_term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_about_subscribe_2"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

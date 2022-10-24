@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_25"
+    android:layout_marginStart="@dimen/dp_25"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_5">
+
+    <ImageView
+        android:id="@+id/imv_play"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:padding="@dimen/dp_3"
+        android:contentDescription="@string/play_pause"
+        android:src="@drawable/sl_player_icon_small" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/sb_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="false"
+            android:max="100"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_bar"
+            android:thumb="@drawable/custom_thumb_seekbar"
+            android:visibility="gone" />
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_12_hz"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_small_11"
+            font:fontText="font_helvetica_neue_bold.otf" />
+    </LinearLayout>
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:gravity="center"
+        android:text="@string/tv_time_20_11"
+        android:textColor="@color/color_text_time_player"
+        android:textSize="@dimen/text_small_10"
+        font:fontText="font_helvetica_neue_bold.otf" />
+</LinearLayout>

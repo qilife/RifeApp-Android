@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nv"
+        layout="@layout/layout_navigation"
+        font:layout_constraintEnd_toEndOf="parent"
+        font:layout_constraintStart_toStartOf="parent"
+        font:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        font:layout_constraintEnd_toEndOf="parent"
+        font:layout_constraintStart_toStartOf="parent"
+        font:layout_constraintTop_toBottomOf="@id/nv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="MissingDefaultResource">
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/tv_length_of_subscription"
+                android:textAllCaps="true"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="@string/tv_lenght_free"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="@string/tv_price_of_subscription"
+                android:textAllCaps="true"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="@string/tv_price_free"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="@string/tv_additional_subscription_informaton"
+                android:textAllCaps="true"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_subscription"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_link_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_about_subscribe_1"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_link_term"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_about_subscribe_2"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical"
+                android:text="@string/txt_about_subscribe_3"
+                android:textAllCaps="false"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_11"
+                font:fontText="font_helvetica_neue.ttf" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.zappkit.zappid.views.CustomFontButton
+        android:id="@+id/btn_sub_free"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@drawable/bg_font_main_menu"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/tv_start_free_trial"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_large_17"
+        android:textStyle="bold"
+        font:fontText="font_helvetica_neue_regular.otf"
+        font:layout_constraintBottom_toBottomOf="parent"
+        font:layout_constraintEnd_toEndOf="parent"
+        font:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

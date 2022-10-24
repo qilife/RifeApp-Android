@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@android:color/white" />
+
+    <com.zappkit.zappid.views.CustomFontButton
+        android:id="@+id/btn_head_mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/color_border_menu"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/tv_add_frequencies"
+        android:textColor="@color/color_title_white"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:text="@string/mySequenceAddFreqInstructions"
+        android:textColor="@color/color_edit_text"
+        android:textSize="@dimen/text_small_12"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/ic_search"
+            android:contentDescription="@string/search_freq_hint" />
+
+        <com.zappkit.zappid.views.CustomFontEditText
+            android:id="@+id/menu_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@android:color/transparent"
+            android:hint="@string/search_freq_hint"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textColor="@color/color_edit_text"
+            android:visibility="visible"
+            font:fontText="font_helvetica_neue_bold.otf" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/FrequencyToAddList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

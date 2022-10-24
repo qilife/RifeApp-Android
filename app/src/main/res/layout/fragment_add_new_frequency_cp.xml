@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@android:color/white" />
+
+    <com.zappkit.zappid.views.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_font_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/tv_add_frequencies"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <com.zappkit.zappid.views.CustomFontEditText
+        android:id="@+id/editnewfreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@android:color/transparent"
+        android:hint="@string/tv_search_fragment_add_frequency"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:textColor="@color/color_edit_text"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/frequency_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_border_menu"
+        android:orientation="horizontal">
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:id="@+id/add_frequency_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bg_font_button"
+            android:clickable="true"
+            android:padding="@dimen/dp_10"
+            android:text="@string/myFrequenciesCancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_14"
+            android:textStyle="bold"
+            font:fontText="font_helvetica_neue.otf" />
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:id="@+id/add_frequency_addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bg_font_button"
+            android:clickable="true"
+            android:padding="@dimen/dp_10"
+            android:text="@string/myFrequenciesAdd"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_14"
+            android:textStyle="bold"
+            font:fontText="font_helvetica_neue.otf"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+</LinearLayout>

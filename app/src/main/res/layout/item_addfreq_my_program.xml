@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/mySeqFreqName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_weight="1"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_small_14"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <ImageView
+        android:id="@+id/mySeqFreqDeletebtn"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@null"
+        android:contentDescription="@string/repeatDescript"
+        android:focusable="false"
+        android:padding="@dimen/dp_5"
+        android:src="@drawable/ic_delete" />
+</LinearLayout>

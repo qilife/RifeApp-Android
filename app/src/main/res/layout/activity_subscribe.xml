@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:round_image="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_gradient_drawable"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imv_left"
+                android:layout_width="@dimen/height_button"
+                android:layout_height="@dimen/height_button"
+                android:padding="@dimen/padding_icon_actionbar"
+                android:src="@drawable/ic_back"
+                app:tint="@color/color_title_white"
+                tools:ignore="ContentDescription" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                font:fontText="font_helvetica_neue_bold.ttf"
+                tools:ignore="MissingPrefix" />
+
+            <ImageView
+                android:id="@+id/imv_right"
+                android:layout_width="@dimen/height_button"
+                android:layout_height="@dimen/height_button"
+                android:padding="@dimen/padding_icon_actionbar"
+                android:src="@drawable/ic_menu"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingDefaultResource">
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:id="@+id/groupSubscriptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_30"
+                android:paddingBottom="@dimen/dp_30"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/txt_subscribe_now"
+                android:textAllCaps="true"
+                android:visibility="gone"
+                android:textColor="#7b52ab"
+                android:textSize="@dimen/text_size_30"
+                font:fontText="MyriadPro_Bold.otf" />
+
+            <LinearLayout
+                android:id="@+id/groupFlashSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:paddingTop="4dp"
+                android:paddingBottom="@dimen/padding_icon_actionbar"
+                android:background="@drawable/bg_shape_flashsale"
+                android:orientation="vertical">
+
+                <com.zappkit.zappid.views.CustomFontTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_flash_sale"
+                    android:textAllCaps="true"
+                    android:textColor="#7b52ab"
+                    android:textSize="@dimen/text_size_40"
+                    font:fontText="MyriadPro_Bold.otf" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/height_calander_icon"
+                        android:layout_height="@dimen/height_calander_icon"
+                        android:tint="#222222"
+                        android:src="@drawable/ic_calendar" />
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_available_until"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/text_large_17"
+                        font:fontText="MyriadPro_Bold.otf" />
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:id="@+id/tvDayFlashSale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="April 4th"
+                        android:textColor="#7b52ab"
+                        android:textSize="@dimen/text_large_17"
+                        font:fontText="MyriadPro_Bold.otf" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:id="@+id/tvDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_left_right_item"
+                            android:paddingRight="@dimen/padding_left_right_item"
+                            android:text="00"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_27"
+                            font:fontText="MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_23"
+                            font:fontText="MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:id="@+id/tvHours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_left_right_item"
+                            android:paddingRight="@dimen/padding_left_right_item"
+                            android:text="00"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_27"
+                            font:fontText="MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_23"
+                            font:fontText="MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:id="@+id/tvMinutes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_left_right_item"
+                            android:paddingRight="@dimen/padding_left_right_item"
+                            android:text="00"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_27"
+                            font:fontText="MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_23"
+                            font:fontText="MyriadPro_Bold.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:id="@+id/tvSeconds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_left_right_item"
+                            android:paddingRight="@dimen/padding_left_right_item"
+                            android:text="00"
+                            android:textColor="#222222"
+                            android:textSize="@dimen/text_size_27"
+                            font:fontText="MyriadPro_Bold.otf" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="DAYS"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_small_6"
+                            font:fontText="MyriadPro_Regular.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="HOURS"
+                            android:textColor="#000"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="@dimen/text_size_small_6"
+                            font:fontText="MyriadPro_Regular.otf" />
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="MINUTES"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_small_6"
+                            android:layout_marginLeft="2dp"
+                            font:fontText="MyriadPro_Regular.otf" />
+
+
+                        <com.zappkit.zappid.views.CustomFontTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="SECONDS"
+                            android:textColor="#000"
+                            android:textSize="@dimen/text_size_small_6"
+                            android:layout_marginLeft="2dp"
+                            fontfontText="MyriadPro_Regular.otf" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/img_program"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_15"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.zappkit.zappid.views.RoundedConnerImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/tv_program"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_background_program"
+                    round_image:border_color="#fff"
+                    round_image:border_width="1dp"
+                    round_image:corner_radius="@dimen/dp_10" />
+
+                <View
+                    android:id="@+id/btn_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shap_bg_image_dim" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:text="@string/txt_7_free_day"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_small_13"
+                        font:fontText="font_helvetica_neue_bold.ttf"
+                        tools:ignore="MissingPrefix" />
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:id="@+id/tv_price_7_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="$24.99 After 7 Days"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_small_10"
+                        font:fontText="font_helvetica_neue_bold.ttf"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/img_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_60"
+                android:visibility="gone"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.zappkit.zappid.views.RoundedConnerImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/tv_frequencies"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_backround_myrife"
+                    round_image:border_color="#fff"
+                    round_image:border_width="1dp"
+                    round_image:corner_radius="@dimen/dp_10" />
+
+                <View
+                    android:id="@+id/btn_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shap_bg_image_dim" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_one_month"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:textSize="@dimen/text_small_13"
+                        font:fontText="font_helvetica_neue_bold.ttf"
+                        tools:ignore="MissingPrefix" />
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$24.99"
+                        android:id="@+id/tv_price_month"
+                        android:textColor="#fff"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:textSize="@dimen/text_small_10"
+                        font:fontText="font_helvetica_neue_bold.ttf"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_60"
+                android:gravity="center"
+                android:text="Unlock Rife"
+                android:layout_gravity="center"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/dp_30"
+                font:fontText="MyriadPro_Bold.otf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_60"
+                android:padding="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="@string/txt_message_billing_1"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_5"
+                android:text="@string/txt_message_billing_4"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:gravity="center_vertical"
+                android:text="@string/txt_message_billing_5"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:gravity="center_vertical"
+                android:text="@string/txt_message_billing_2"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:gravity="center_vertical"
+                android:text="@string/txt_message_billing_6"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                android:padding="@dimen/dp_5"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:gravity="center_vertical"
+                android:text="@string/txt_message_billing_7"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/color_title_white"
+                android:textSize="@dimen/text_small_13"
+                font:fontText="font_helvetica_neue.ttf" />
+
+            <FrameLayout
+                android:id="@+id/img_my_rife"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_60"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.zappkit.zappid.views.RoundedConnerImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/tv_my_rife_app"
+                    android:scaleType="centerCrop"
+                    />
+
+                <View
+                    android:id="@+id/btn_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shap_bg_image_dim" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_one_year"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:textSize="@dimen/text_small_13"
+                        font:fontText="font_helvetica_neue_bold.ttf"
+                        tools:ignore="MissingPrefix" />
+
+                    <com.zappkit.zappid.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$59.99"
+                        android:id="@+id/tv_price_year"
+                        android:textColor="#fff"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:textSize="@dimen/text_small_10"
+                        font:fontText="font_helvetica_neue_bold.ttf"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:id="@+id/btn_free_trial"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_btn_setting"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_50"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:background="@drawable/bg_font_main_menu"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="@string/txt_subscribe_info"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_17"
+                android:textStyle="bold"
+                font:fontText="font_helvetica_neue_regular.otf" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

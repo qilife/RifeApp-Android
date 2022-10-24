@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/addmorecontentBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#7c22a9"
+        android:onClick="add_SequenceLayoutOpen"
+        android:text="@string/myPlaylistAddSequence"
+        android:textColor="#ffffffff"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/myPlaylistNoAddedSeqText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addmorecontentBtn"
+        android:text="@string/myPlaylistNoSeqAdded"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/myPlaylistButtonBorderBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7c22a9">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#7c22a9"
+            android:onClick="backToNameAndNotes"
+            android:padding="5.0dip"
+            android:text="@string/mySequencesBack"
+            android:textColor="#ffffffff"
+            android:textSize="38sp" />
+
+        <Button
+            android:id="@+id/myPlayListAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#7c22a9"
+            android:onClick="addPlaylistToMyPlaylists"
+            android:padding="5.0dip"
+            android:text="@string/txt_save_playlist"
+            android:textColor="#ffffffff"
+            android:textSize="38sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/myPlaylistSeqList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/myPlaylistButtonBorderBottom"
+        android:layout_below="@+id/addmorecontentBtn" />
+</RelativeLayout>

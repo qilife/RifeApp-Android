@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/personal_content"
+        android:textSize="26sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+
+    <Button
+        android:id="@+id/myfrequencies"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4.0dip"
+        android:background="#7c22a9"
+        android:text="@string/myfrequencies"
+        android:textColor="#ffffffff"
+        android:textSize="27sp" />
+
+    <Button
+        android:id="@+id/mysequence"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4.0dip"
+        android:background="#7c22a9"
+        android:text="@string/mysequences"
+        android:textColor="#ffffffff"
+        android:textSize="27sp" />
+
+    <Button
+        android:id="@+id/myplaylists"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4.0dip"
+        android:background="#7c22a9"
+        android:text="@string/myplaylists"
+        android:textColor="#ffffffff"
+        android:textSize="27sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+</LinearLayout>

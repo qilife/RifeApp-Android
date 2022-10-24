@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">true</bool>
+
+    <declare-styleable name="TextFont">
+        <attr name="fontText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="RoundedConnerImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="round_background" format="boolean" />
+        <attr name="is_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="CustomSeekBar">
+        <attr name="csb_progress_height" format="dimension" />
+        <attr name="csb_progress_background_height" format="dimension" />
+        <attr name="csb_progress_color" format="color" />
+        <attr name="csb_thumb_size" format="dimension" />
+        <attr name="csb_progress" format="integer" />
+        <attr name="csb_max" format="integer" />
+    </declare-styleable>
+</resources>

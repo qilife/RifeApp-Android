@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:orientation="horizontal"
+        android:paddingTop="10.0dip">
+
+        <TextView
+            android:id="@+id/freq_hz_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150.0dip"
+            android:gravity="right"
+            android:paddingRight="10.0dip"
+            android:text="@string/freq_hz_cursor"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/freq_hz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcccccc"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip">
+
+        <TextView
+            android:id="@+id/freq_playcount_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="150.0dip"
+            android:gravity="right"
+            android:paddingRight="10.0dip"
+            android:text="@string/freq_playcount_cursor"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/freq_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4.0dip"
+        android:background="#7c22a9"
+        android:onClick="playFrequencyButton"
+        android:text="@string/play_freq"
+        android:textColor="#ffffffff"
+        android:textSize="27sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:background="#7c22a9" />
+</LinearLayout>

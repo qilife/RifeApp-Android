@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_size_16"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_small_14"
+        font:fontText="font_helvetica_neue.otf" />
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_dialog_30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical">
+
+        <com.zappkit.zappid.views.CustomFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Frequency Duration"
+            android:textAllCaps="false"
+            android:textColor="#222222"
+            android:textSize="@dimen/text_small_14"
+            font:fontText="font_helvetica_neue_bold.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="30dp">
+
+            <com.zappkit.zappid.views.CustomFontEditText
+                android:id="@+id/edt_input"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_30"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:selectAllOnFocus="true"
+                android:text="150"
+                android:textSize="@dimen/text_small_14"
+                font:fontText="font_helvetica_neue.otf" />
+
+            <com.zappkit.zappid.views.CustomFontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Seconds"
+                android:textColor="#222222"
+                android:textSize="@dimen/text_small_14"
+                font:fontText="font_helvetica_neue.otf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7B52AB"
+            android:orientation="horizontal">
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_font_button_not_selected"
+                android:gravity="center"
+                android:text="@string/prefCaliDialogFirstNegButton"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <com.zappkit.zappid.views.CustomFontButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:background="@drawable/bg_font_button_not_selected"
+                android:gravity="center"
+                android:text="@string/prefCaliDialogFirstPosButton"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_small_12"
+                font:fontText="font_helvetica_neue_bold.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_navigation" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@android:color/white" />
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/bg_font_button_setting"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/tv_setting_unlock_all_frequencies"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            font:fontText="font_helvetica_neue.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="@android:color/white" />
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/bg_font_button_setting"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/tv_setting_restore_purchase"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16"
+            font:fontText="font_helvetica_neue.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_left_menu"
+        android:layout_width="@dimen/dp_220"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_list_menu"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10" />
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "83558099494",
+    "firebase_url": "https://rife-42138.firebaseio.com",
+    "project_id": "rife-42138",
+    "storage_bucket": "rife-42138.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83558099494:android:3248a14234b44454b654e7",
+        "android_client_info": {
+          "package_name": "com.rifeapp.rifeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83558099494-72tjok7cdms6j7upnn1p111qhrqm80jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rifeapp.rifeapp",
+            "certificate_hash": "94d2375e53c4fa7c4979882299d2eca3d8f082ac"
+          }
+        },
+        {
+          "client_id": "83558099494-57n6c8q28o0mlv1fmcvksaeqo8m8p3g2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkR2UwX-LZOea2HvOjdOP8DavYGAquDA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83558099494-57n6c8q28o0mlv1fmcvksaeqo8m8p3g2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/vHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" />
+
+    <com.zappkit.zappid.views.CustomFontButton
+        android:id="@+id/btn_head_mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vHeader"
+        android:background="@color/color_border_menu"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/tv_new_program"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_head_mp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:text="@string/playlistNotes_1"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_small_11"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/tv_program_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/mySequencesAddNameHint"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_program_title"
+        android:background="@android:color/darker_gray" />
+
+    <com.zappkit.zappid.views.CustomFontEditText
+        android:id="@+id/editnewseqname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v2"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@android:color/transparent"
+        android:singleLine="true"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/editnewseqname"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v1"
+        android:layout_below="@+id/editnewseqname"
+        android:layout_marginTop="@dimen/dp_5"
+        android:visibility="gone" />
+
+    <com.zappkit.zappid.views.CustomFontTextView
+        android:id="@+id/tv_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_view"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/mySequencesAddNotesHint"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <View
+        android:id="@+id/v4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_note_title"
+        android:background="@android:color/darker_gray" />
+
+    <com.zappkit.zappid.views.CustomFontEditText
+        android:id="@+id/editnewseqnotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v4"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@android:color/transparent"
+        android:singleLine="true"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/text_medium_15"
+        font:fontText="font_helvetica_neue.otf" />
+
+    <View
+        android:id="@+id/v5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/editnewseqnotes"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_above="@+id/rl"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_border_menu">
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:id="@+id/add_frequency_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bg_font_button"
+            android:clickable="true"
+            android:padding="@dimen/dp_10"
+            android:text="@string/myFrequenciesCancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_14"
+            android:textStyle="bold"
+            font:fontText="font_helvetica_neue_bold.otf" />
+
+        <com.zappkit.zappid.views.CustomFontButton
+            android:id="@+id/add_frequency_addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/bg_font_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/tv_next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small_14"
+            android:textStyle="bold"
+            font:fontText="font_helvetica_neue_bold.otf"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+</RelativeLayout>

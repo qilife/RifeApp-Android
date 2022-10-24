@@ -1,0 +1,8 @@
+﻿Abscess;;Ígerð (abscess);;190/428/444/450/464/465/500/660/690/727.5/760/787/802/880/1550/1865/2170/2720;
+Abscesses;also use Staphylococcus aureus and see Listeriose;Ígerð (abscess);einnig nota Staphylococcus aureus og sjá Listeriose;190/200/500/727/727.5/787/880/2170/2720;
+Abscesses secondary;;Ígerð annars stigs (absecess annars stigs);;428/444/450/465/660/760/802/1550;
+Acidosis;;Mjólkursýru-blóðsýring (acidosis);pH hefur fallið niður fyrir 7.35 … (harðsperrur) mjög góð við harðsperrum - Súrnun líkamsvefja;20/146/660/690/727/727.5/776/787/802/880/1550/10000;
+Adhesion;;Samgróningar A;;190/660/690/727.5/760/776/787/802/880/1550/2170/2720;
+Zirconium zr;;;;198.61/214.09/18222.65;
+Zollinger-Ellison Syndrome;;;;100/900/2500/20000/37500/97500/325000/419340/561930/823960;
+Zoonoses;;;;170/520/2750/17500/45160/72500/122530/175000/475050/527000;

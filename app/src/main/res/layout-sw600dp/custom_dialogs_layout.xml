@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="Disclaimer and Waiver"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:text="By using this app, to the extent permitted by applicable law, you release this app’s creator, website and its Affiliates, and it’s and their employees, agents and representatives from any and all liability, damage or loss.  This app and tablet are not medical devices are not intended to be used to diagnose, treat, cure or prevent any disease. This app has not been evaluated by the FDA and no medical claims are made or implied for this app.  If you feel discomfort or dizziness, stop using this app.  Always consult with your doctor before using any or our products. "
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Agree"
+            android:textColor="#FFF" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_disagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:text="Later"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</LinearLayout>
+
+

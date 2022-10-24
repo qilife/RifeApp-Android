@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">520842161779229</string>
+    <string name="fb_login_protocol_scheme">fb520842161779229</string>
+    <string name="AboutDialogCompany">This app is developed by Rife Machine Frequency PEMF Therapy Technologies.</string>
+    <string name="AboutDialogNenahSylver" />
+    <string name="AboutDialogTitle">About Rife App</string>
+    <string name="AboutDialogVersion">Version:</string>
+    <string name="Add_entry">Add to Database</string>
+    <string name="App_pref_categ">Application Preferences</string>
+    <string name="Freq_pref_categ">Frequency Preferences</string>
+    <string name="abs__action_bar_home_description">Navigate Home</string>
+    <string name="abs__action_bar_up_description">Navigate Up</string>
+    <string name="abs__action_menu_overflow_description">More Options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See All</string>
+    <string name="abs__activitychooserview_choose_application">Choose an Application</string>
+    <string name="abs__searchview_description_clear">Clear Query</string>
+    <string name="abs__searchview_description_query">Search Query</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_submit">Submit Query</string>
+    <string name="abs__searchview_description_voice">Voice Search</string>
+    <string name="abs__shareactionprovider_share_with">Share With</string>
+    <string name="abs__shareactionprovider_share_with_application">Share With %s</string>
+    <string name="action_about">About</string>
+    <string name="action_donate_string">Support Our Efforts</string>
+    <string name="action_player">Open Player</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_zamplifier">Learn about Rife App</string>
+    <string name="add">Add New Frequency</string>
+    <string name="addFrequencyText">Enter desired frequency to add to the existing list of frequencies</string>
+    <string name="add_frequency">Add Frequency</string>
+    <string name="changeLanguage">Language Changed</string>
+    <string name="freq_frag_text">Complete list of individual frequencies</string>
+    <string name="freq_hz_cursor">Frequency:</string>
+    <string name="freq_playcount_cursor">Play Count:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="inactivePlayer">The player is inactive</string>
+    <string name="languageTitle">Language</string>
+    <string name="learnmore">Learn More</string>
+    <string name="loadingDialogMessage">Starting the player</string>
+    <string name="loadingDialogTitle">Loading</string>
+    <string name="loopTriggerStr">Hold to loop programs</string>
+    <string name="main_frag_notes">Notes</string>
+    <string name="main_frag_notes_cursor">Notes:</string>
+    <string name="main_frag_text">Programs are unique sequences of 2 or more frequencies.  Select a program below to get started.</string>
+    <string name="myFrequecniesAddedFreq">New frequency added</string>
+    <string name="myFrequenciesAdd">ADD</string>
+    <string name="myFrequenciesCancel">CANCEL</string>
+    <string name="myFrequenciesDecimalOverload">There are too many decimal places. Rife App is limited to 3</string>
+    <string name="myFrequenciesEditTextHint">Type your frequency</string>
+    <string name="myFrequenciesFrequencyExistsMain">This frequency already exists in the main frequency list</string>
+    <string name="myFrequenciesFrequencyExistsMy">This frequency already exists in your personal frequency list</string>
+    <string name="myFrequenciesNotypedFreq">"You didn't enter a frequency"</string>
+    <string name="myFrequenciesOutOfRange">"The frequency is out of range (0.5Hz - 23kHz)"</string>
+    <string name="myFrequencyDeleteDialogCompleted">Frequency deleted</string>
+    <string name="myFrequencyDeleteDialogNo">Cancel</string>
+    <string name="myFrequencyDeleteDialogText">You are about to delete your frequency. Are you sure you want to proceed?</string>
+    <string name="myFrequencyDeleteDialogTitle">Warning!</string>
+    <string name="myFrequencyDeleteDialogYes">Delete</string>
+    <string name="myPlalistCreateBtn">Create new playlist</string>
+    <string name="myPlaylistAddNameHint">Playlist Title:</string>
+    <string name="myPlaylistAddNotesHint">Write notes for this playlist (optional)</string>
+    <string name="myPlaylistAddSequence">Add a Program</string>
+    <string name="myPlaylistCancel">Cancel</string>
+    <string name="myPlaylistDeleteDialogCompleted">Playlist deleted</string>
+    <string name="myPlaylistDeleteDialogText">You are about to delete your playlist. Are you sure you want to proceed?</string>
+    <string name="myPlaylistEditBtn">Complete changes</string>
+    <string name="myPlaylistMissingName">You need to choose a name</string>
+    <string name="myPlaylistNext">Next</string>
+    <string name="myPlaylistNoContent">No existing playlists</string>
+    <string name="myPlaylistNoSeqAdded">Add programs to your playlist</string>
+    <string name="myPlaylist_title">My Playlists</string>
+    <string name="mySequenceAddFreqInstructions">Select a frequency to add to your playlist by tapping on it.</string>
+    <string name="mySequenceDeleteDialogCompleted">Programs deleted</string>
+    <string name="mySequenceDeleteDialogText">You are about to delete your program. Are you sure you want to proceed?</string>
+    <string name="mySequencesAddBtn">Add Programs</string>
+    <string name="mySequencesAddFrequency">ADD FREQUENCIES TO THIS PROGRAM</string>
+    <string name="mySequencesAddNameHint">Program Title:</string>
+    <string name="mySequencesAddNotesHint">Notes: (Optional)</string>
+    <string name="mySequencesAddSeq">Add Program</string>
+    <string name="mySequencesBack">Back</string>
+    <string name="mySequencesMissingFreq">The program needs frequencies</string>
+    <string name="mySequencesMissingName">The program needs a name</string>
+    <string name="mySequencesNext">Next</string>
+    <string name="myfrequencies">My Frequencies</string>
+    <string name="myplaylistAddSeqInstructions">Select a program to add to your playlist by tapping on it.</string>
+    <string name="myplaylists">My Playlists</string>
+    <string name="mysequences">My Programs</string>
+    <string name="noContentFreq">You have no custom frequencies</string>
+    <string name="noContentSeq">You have no custom programs</string>
+    <string name="none">None</string>
+    <string name="notificationsTitle">Notifications</string>
+    <string name="notifyOff">Notifications disabled</string>
+    <string name="notifyOn">Notifications enabled</string>
+    <string name="notifySummary">Shows notification when the frequency player is active</string>
+    <string name="okay">OK</string>
+    <string name="personal_content">Create your own frequencies, programs and playlists</string>
+    <string name="personal_listview_header">Your Programs:</string>
+    <string name="play_freq">Play Frequency</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="play_seq">Play Program</string>
+    <string name="player_text">Frequency or programs playing</string>
+    <string name="player_text_cursor">Currently playing:</string>
+    <string name="player_time">0</string>
+    <string name="player_time_cursor">Time left:</string>
+    <string name="player_total_time_cursor">Total time left:</string>
+    <string name="playlistNotes">None</string>
+    <string name="playlistNotes_1">Programs can contain one on more frequencies that
+        can be played in a sequence.Add your own
+        sequence of frequencies to create a program.</string>
+    <string name="line">Playlists can contain 2 or more programs that can be played consecutively.</string>
+
+    <string name="playlistNotesCursor">Notes:</string>
+    <string name="playlistPlayBtn">Play the playlist</string>
+    <string name="prefCaliDialogFirstNegButton">Cancel</string>
+    <string name="prefCaliDialogFirstPosButton">Continue</string>
+    <string name="prefCaliDialogFirstText">"Ensure that the device is correctly connected, and that the intensity is turned up as well as your device's volume. This will also stop any frequencies you are playing. Continue?"</string>
+    <string name="prefCaliDialogFirstTitle">Before you beginâ€¦</string>
+    <string name="prefCaliDialogSecondNegButton">No</string>
+    <string name="prefCaliDialogSecondPosButton">Yes</string>
+    <string name="prefCaliDialogSecondText">Can you feel the frequency?</string>
+    <string name="prefCaliDialogSecondTextTwo">How about now?</string>
+    <string name="prefCaliDialogSecondTitle">Calibratingâ€¦</string>
+    <string name="prefCaliFinished">Your Rife App has been calibrated</string>
+    <string name="prefCaliZampSummary">Calibrating the Rife App is necessary for devices users</string>
+    <string name="prefCaliZampTitle">This app is developed by Rife Machine Frequency PEMF Therapy Technologies</string>
+    <string name="pref_duration">Frequency duration (sec)</string>
+    <string name="pref_user_name_summary">bara eitthvaÃ°</string>
+    <string name="pref_zamp_categ">Preferences</string>
+    <string name="readit">I have read and agree to these terms!</string>
+    <string name="repeatDescript">Repeat Icon</string>
+    <string name="search_freq_hint">Search Frequencies</string>
+    <string name="search_hint">Search Programs</string>
+    <string name="secondsText">Seconds</string>
+    <string name="serviceNotiCurrPause">Rife App is currently paused</string>
+    <string name="serviceNotiCurrPlay">Rife App is currently playing</string>
+    <string name="stop_btn">Stop</string>
+    <string name="test_string">Test</string>
+    <string name="text_filler">Bara ad skrifa eitthvad hingad</string>
+    <string name="title_activity_frequency">Frequency</string>
+    <string name="title_activity_player">Player</string>
+    <string name="title_activity_playlist">Playlist Activity</string>
+    <string name="title_activity_searchable">Searchable Activity</string>
+    <string name="title_activity_sequence">Programs</string>
+    <string name="title_activity_user_settings">User Settings</string>
+    <string name="title_activity_zamplifier">Device</string>
+    <string name="title_my_frequencies">My Frequencies</string>
+    <string name="title_my_sequences">My Programs</string>
+    <string name="title_section1">Programs</string>
+    <string name="title_section2">Frequencies</string>
+    <string name="title_section3">My Rife app</string>
+    <string name="zappkitdescription">This App is designed to be used with your Rife device. Combine the Rife App with your amplifier to have a complete Rife machine, ready to be used wherever and whenever you want.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_save_playlist">Save Playlist</string>
+    <string name="txt_add_new_program">Add a new program</string>
+    <string name="txt_save_program">Save program</string>
+
+    <!--TODO: Change App-->
+    <string name="tv_program">PROGRAMS</string>
+    <string name="tv_frequencies">FREQUENCIES</string>
+    <string name="tv_my_rife_app">MY RIFE APP</string>
+    <string name="tv_title_program_menu_main">Unique sequence of 2 frequencies or more frequencies</string>
+    <string name="tv_title_frequency_menu_main">Complete list of frequencies</string>
+    <string name="tv_title_my_rife_menu_main">Create your own Playlist, Programs and Frequencies</string>
+    <string name="tv_now_playing">Now Playing</string>
+    <string name="tv_title_my_playlist_to_my_rife">Your saved playlists</string>
+    <string name="tv_title_my_frequency_to_my_rife">Your custom frequencies</string>
+    <string name="tv_title_my_program_to_my_rife">Your custom programs</string>
+    <string name="tv_my_programs">MY PROGRAMS</string>
+    <string name="tv_my_frequencies">MY FREQUENCIES</string>
+    <string name="tv_my_playlist">MY PLAYLIST</string>
+    <string name="txt_pause">Paused</string>
+
+    <string name="txt_waiting">Waiting...</string>
+    <string name="txt_instructions">Instructions</string>
+    <string name="tv_search_fragment_add_frequency">Enter your frequency. Add if it\'s not yet on the list</string>
+    <string name="tv_add_frequencies">ADD FREQUENCIES</string>
+    <string name="tv_new_program">NEW PROGRAM</string>
+    <string name="tv_save">SAVE</string>
+    <string name="tv_back">BACK</string>
+    <string name="tv_next">NEXT</string>
+    <string name="tv_setting_unlock_all_frequencies">UNLOCK ALL FREQUENCIES</string>
+    <string name="tv_setting_restore_purchase">RESTORE PURCHASE</string>
+    <string name="tv_note_playlist">Playlist can contain one or more programs that can be played in a sequence.Add your own sequence of programs to create a playlist</string>
+    <string name="tv_new_playlist">NEW PLAYLIST</string>
+    <string name="tv_12_hz">12 Hz</string>
+    <string name="tv_frequency_duration">Frequency Duration</string>
+    <string name="tv_180_seconds">180 Seconds</string>
+    <string name="tv_notifications">Notifications</string>
+    <string name="tv_show_notifications_when_the_player_is_active">Show notifications when the player is active</string>
+    <string name="tv_calibration">Calibration</string>
+    <string name="tv_calibrating_the_rife_app_is_necessary_for_device_users">Calibrating the Rife App is necessary for device users</string>
+    <string name="tv_add_a_new_program">ADD A NEW PROGRAM</string>
+    <string name="tv_time_20_11">20:11</string>
+    <string name="txt_warning_update_newversion_title">Update Available</string>
+    <string name="txt_warning_update_newversion">An update is available. Would you like to update the application now? \n In case, you cannot install the new version. Please clear Google Play Store app cache and try again.</string>
+    <string name="txt_downloading_dot">Downloading...</string>
+    <string name="txt_agree">Agree</string>
+    <string name="txt_disagree">Disagree</string>
+    <string name="txt_later">Later</string>
+    <string name="txt_title_disclaimer">Disclaimer and Waiver</string>
+    <string name="txt_content_disclaimer">By using this app, to the extent permitted by applicable law, you release this app’s creator, website and its Affiliates, and it’s and their employees, agents and representatives from any and all liability, damage or loss.  This app and tablet are not medical devices are not intended to be used to diagnose, treat, cure or prevent any disease. This app has not been evaluated by the FDA and no medical claims are made or implied for this app.  If you feel discomfort or dizziness, stop using this app.  Always consult with your doctor before using any or our products. </string>
+
+
+    <string name="txt_free_trial">FREE TRIAL</string>
+    <string name="txt_restore_purchase">RESTORE PURCHASE</string>
+    <string name="txt_subcrise">SUBSCRIBE</string>
+    <string name="txt_message_billing_1">• Unlock 10000+ Rife Frequencies</string>
+    <string name="txt_message_billing_2">• Customizable Frequencies</string>
+    <string name="txt_message_billing_3">• Full Program Durations</string>
+    <string name="txt_message_billing_4">• Unlimited Program Durations</string>
+    <string name="txt_message_billing_5">• Unlimited Use</string>
+    <string name="txt_message_billing_6">• Custom Programs</string>
+    <string name="txt_message_billing_7">• Free Updates</string>
+    <string name="txt_subscribe_info">SUBSCRIPTION INFO</string>
+    <string name="txt_7_free_day">7 DAYS FREE</string>
+    <string name="txt_about_subscribe">
+        • Payment will be charged to Google Account at confirmation of purchase&lt;br/&gt;
+        • Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period&lt;br/&gt;
+        • Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal&lt;br/&gt;
+        • Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user’s Account Settings after purchase&lt;br/&gt;
+        • No cancellation of the current subscription is allowed during active subscription period</string>
+    <string name="txt_about_subscribe_1">• Privacy Policy: &lt;u&gt;http://www.tattoobookapp.com/quantumwavebiotechnology/privacy/&lt;/u&gt;</string>
+    <string name="txt_about_subscribe_2">• Terms of use: &lt;u&gt;http://www.tattoobookapp.com/quantumwavebiotechnology/terms/</string>
+    <string name="txt_about_subscribe_3">• Any unused portion of a free trial period, if
+        offered, will be forfeited when the user
+        purchases a subscription to that publication.</string>
+    <string name="txt_limit_offer">Limited Time Offer</string>
+    <string name="txt_one_month">1 MONTH</string>
+    <string name="txt_one_year">1 YEAR</string>
+    <string name="txt_custom">CUSTOM</string>
+    <string name="txt_shop">SHOP</string>
+
+    <string name="txt_subscription">
+        • Payment will be charged to Google Account at confirmation of purchase&lt;br/&gt;
+        • Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period&lt;br/&gt;
+        • Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal&lt;br/&gt;
+        • Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user’s Account Settings after purchase&lt;br/&gt;
+        • No cancellation of the current subscription is allowed during active subscription period
+    </string>
+    <string name="tv_length_of_subscription">LENGTH OF SUBSCRIPTION:</string>
+    <string name="tv_lenght_free">• 1 Month, 7 days free trial</string>
+    <string name="tv_price_of_subscription">PRICE OF SUBSCRIPTION:</string>
+    <string name="tv_price_free">• Free trial - 7 days free, then $24.99 per month. The price corresponds to the same prece segment, which are set in the Android Google Play for other currencies</string>
+    <string name="tv_additional_subscription_informaton">additional subscription informaton:</string>
+    <string name="tv_start_free_trial">Start free trial</string>
+    <string name="tv_length_month">• 1 Month</string>
+    <string name="tv_price_month"> per month. The price corresponds to the same prece segment, which are set in the Android Google Play for other currencies</string>
+    <string name="tv_start_monthly_subscription">Start monthly subscription</string>
+    <string name="tv_length_year">• 1 Year</string>
+    <string name="tv_price_year"> per year. The price corresponds to the same prece segment, which are set in the Android Google Play for other currencies</string>
+    <string name="tv_start_yearly_subscription">Start yearly subscription</string>
+    <string name="tv_7_day_s_free">7 days free</string>
+    <string name="tv_activate_your_free_trial">Activate Your FREE Trial</string>
+    <string name="txt_inapp_trial_descrition">%1$s Monthly After 7 Days</string>
+    <string name="tv_flash_sale">FLASH SALE!!!</string>
+    <string name="tv_available_until">&#160;Available Until&#160;</string>
+    <string name="txt_subscribe_now">SUBSCRIBE NOW</string>
+    <string name="txt_flash_sale">Flash Sale</string>
+    <string name="creating_data">Creating data…</string>
+
+    <string name="tv_sign_up">Sign Up</string>
+    <string name="tv_email">Email*</string>
+    <string name="tv_password">Password*</string>
+    <string name="tv_confirm_password">Confirm Password*</string>
+    <string name="tv_name">Name*</string>
+    <string name="tv_get_started">Get Started</string>
+    <string name="tv_signIn">Already has an account?</string>
+    <string name="tv_link_sign_in">&lt;u&gt; Sign in.&lt;/u&gt;</string>
+    <string name="tv_sign_in">Sign In</string>
+    <string name="tv_signUp">Don\'t have an account?</string>
+    <string name="tv_link_sign_up">&lt;u&gt; Sign up.&lt;/u&gt;</string>
+</resources>
