@@ -1,5 +1,7 @@
 package com.zappkit.zappid.lemeor;
 
+import static com.zappkit.zappid.lemeor.tools.Constants.APP_CENTER_SECRET;
+
 import android.os.Build;
 import android.os.StrictMode;
 import android.text.TextUtils;
@@ -11,6 +13,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.facebook.FacebookSdk;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 import java.lang.reflect.Method;
 
@@ -36,6 +41,12 @@ public class RifeApp extends MultiDexApplication {
                 e.printStackTrace();
             }
         }
+        initAppCenter();
+    }
+
+    private void initAppCenter() {
+        AppCenter.start(this, APP_CENTER_SECRET,
+                Analytics.class, Crashes.class);
     }
 
     public static synchronized RifeApp getInstance() {

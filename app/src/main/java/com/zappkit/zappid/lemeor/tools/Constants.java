@@ -4,6 +4,8 @@ public class Constants {
     public static long ONE_HOUR_TIME = 60 * 60 * 1000;
     public static int LIMIT_TIME_5_MINUTES = 5 * 60 * 1000;
 
+    public static String APP_CENTER_SECRET = "896b1717-eb92-42d9-83b9-020c8580cffa";
+
     public static String CHARSET = "UTF-8";
     public static int FAILURE_SESSION_EXPIRED = 402;
 

@@ -141,7 +141,12 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                             messageDuration.setmOnClickYesListener(new CustomDialogMessageDuration.OnClickYesListener() {
                                 @Override
                                 public void onClick(String value1) {
-                                    int valueNumber = Integer.parseInt(value.equals("") ? "0" : value);
+                                    int valueNumber = 0;
+                                    try {
+                                        valueNumber = Integer.parseInt(value.equals("") ? "0" : value);
+                                    } catch (NumberFormatException e) {
+                                        e.printStackTrace();
+                                    }
                                     setTime(valueNumber);
                                     editor.putInt("FreqDuration", valueNumber);
                                     editor.commit();

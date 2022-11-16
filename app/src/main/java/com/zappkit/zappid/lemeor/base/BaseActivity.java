@@ -686,7 +686,9 @@ public abstract class BaseActivity extends AppCompatActivity implements DrawerLa
         AlertDialog.Builder bld = new AlertDialog.Builder(this);
         bld.setMessage(message);
         bld.setNeutralButton("OK", null);
-        bld.create().show();
+        if (!isFinishing()) {
+            bld.create().show();
+        }
     }
 
     private void backupUserData() {

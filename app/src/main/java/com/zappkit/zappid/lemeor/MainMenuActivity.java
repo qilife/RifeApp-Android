@@ -45,7 +45,6 @@ import com.facebook.login.LoginResult;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 import com.zappkit.zappid.BuildConfig;
-import com.zappkit.zappid.LoginActivity;
 import com.zappkit.zappid.R;
 import com.zappkit.zappid.lemeor.api.ApiListener;
 import com.zappkit.zappid.lemeor.api.models.GetAPKsNewVersionOutput;
@@ -352,15 +351,25 @@ public class MainMenuActivity extends BaseActivity implements ApiListener {
             }, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
     }
 
+    private void checkPermissionsResult() {
+        if (hasPermissions(this, PERMISSIONS)) {
+            onPermissionsGranted();
+        }
+    }
+
+    private void onPermissionsGranted() {
+        if (!BuildConfig.IS_FREE) {
+            checkAndShowFlashSale();
+        } else {
+            new GetAPKNewVersionTask(this, this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        }
+    }
+
     private void requestPermissions() {
         if (!hasPermissions(this, PERMISSIONS)) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
         } else {
-            if (!BuildConfig.IS_FREE) {
-                checkAndShowFlashSale();
-            } else {
-                new GetAPKNewVersionTask(this, this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-            }
+            onPermissionsGranted();
         }
     }
 
@@ -389,7 +398,7 @@ public class MainMenuActivity extends BaseActivity implements ApiListener {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS) { requestPermissions(); }
+        if (requestCode == REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS) { checkPermissionsResult(); }
     }
 
     @Override

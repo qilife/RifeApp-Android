@@ -14,19 +14,35 @@
       },
       "oauth_client": [
         {
-          "client_id": "942446389344-1556nijru41pkk3mi8jvbtcvhchtm02p.apps.googleusercontent.com",
+          "client_id": "942446389344-ajurdl7gggn5ggabtsk06aqerclcnra1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.Meditation.Sounds.frequencies",
-            "certificate_hash": "0f72854a5d627e0be9ad85d1e205041b59c2e8cf"
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
           }
         },
         {
-          "client_id": "942446389344-vmitujdmhnndm7sfb3qcl34rvqp28p89.apps.googleusercontent.com",
+          "client_id": "942446389344-h1jqf0cjkc5ljbj9jimsm7iptfvva0md.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.Meditation.Sounds.frequencies",
             "certificate_hash": "a92efede46d064af7a29e4ffb594ca8eda9d1acc"
+          }
+        },
+        {
+          "client_id": "942446389344-lj2p1akkvv6er67huqu136lt75cbciso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Meditation.Sounds.frequencies",
+            "certificate_hash": "eb116f7390f1800fcbd23784c21d1ba2bc3e41bc"
+          }
+        },
+        {
+          "client_id": "942446389344-u9dqu75be58a5v16jce2h7jn9ks7e40b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Meditation.Sounds.frequencies",
+            "certificate_hash": "0f72854a5d627e0be9ad85d1e205041b59c2e8cf"
           }
         },
         {
@@ -103,6 +119,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "942446389344-s585rk566kmn227m9c23e04hmm1vj3vv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rifeapp.rifeapp",
+            "certificate_hash": "b6cd69998db65afa0ff0fb47ee2ead91303978b5"
+          }
+        },
         {
           "client_id": "942446389344-enu5kv3t8gr36r4hfqcr577r67ohak6j.apps.googleusercontent.com",
           "client_type": 3

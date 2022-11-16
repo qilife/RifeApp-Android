@@ -387,7 +387,13 @@ public class FrequencyUIActivity extends BaseActivity {
                 PlayItemModel tempModel = new PlayItemModel();
                 String tempId = playlist.getString(playlist.getColumnIndex("frequency_id"));
                 boolean repeat = playlist.getInt(playlist.getColumnIndex("loop")) == 1;
-                double tmpFreq = Double.parseDouble(mDatabase.getFrequencyString(tempId, playlist.getInt(playlist.getColumnIndex("frequency_db_id"))));
+
+                double tmpFreq = 0.0;
+                try {
+                    tmpFreq = Double.parseDouble(mDatabase.getFrequencyString(tempId, playlist.getInt(playlist.getColumnIndex("frequency_db_id"))));
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
                 tempModel.setId(Integer.parseInt(tempId));
                 tempModel.setIdDB(playlist.getInt(playlist.getColumnIndex("_id")));
                 tempModel.setLoop(repeat);
