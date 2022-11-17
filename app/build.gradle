@@ -32,8 +32,8 @@ android {
     productFlavors {
         app {
             applicationId 'com.rifeapp.rifeapp'
-            versionCode 1712
-            versionName "1.7.12"
+            versionCode 1713
+            versionName "1.7.13"
             buildConfigField "boolean", "IS_FREE", "false"
             buildConfigField "String", "PREF_TITLE", '"rife_app_pref"'
             resValue "string", "app_name", "Rife App"

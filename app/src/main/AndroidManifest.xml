@@ -30,7 +30,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
         <activity android:name=".SplashActivity"
-            android:screenOrientation="portrait"
+            
             android:exported="true"
             >
             <intent-filter>
@@ -40,19 +40,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupActivity"
-            android:screenOrientation="portrait"/>
+            />
         <activity android:name=".LoginActivity"
-            android:screenOrientation="portrait"/>
+            />
         <activity
             android:name=".lemeor.MainMenuActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            
             android:windowSoftInputMode="adjustResize|adjustPan">
         </activity>
         <activity
             android:name=".lemeor.main_menu.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            
             android:windowSoftInputMode="adjustResize|adjustPan">
             <meta-data
                 android:name="android.app.searchable"
@@ -62,7 +62,7 @@
             android:name=".Sequence"
             android:label="@string/title_activity_sequence"
             android:parentActivityName=".lemeor.main_menu.MainActivity"
-            android:screenOrientation="portrait">
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zappkit.zappid.lemeor.main_menu.MainActivity" />
@@ -70,12 +70,12 @@
         <activity
             android:name=".Frequency"
             android:label="@string/title_activity_frequency"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".lemeor.main_menu.player.FrequencyUIActivity"
             android:label="@string/title_activity_player"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
+             />
 
         <service
             android:name=".lemeor.main_menu.player.FrequencyService"
@@ -87,31 +87,31 @@
         <activity
             android:name=".MySequences"
             android:label="@string/title_my_sequences"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".MyFrequencies"
             android:label="@string/title_my_frequencies"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".MyPlayListActivity"
             android:label="@string/myPlaylist_title"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".PlaylistActivity"
             android:label="@string/title_activity_playlist"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".lemeor.top_menu.SettingActivity"
             android:label="@string/action_settings"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".lemeor.top_menu.InstructionsActivity"
             android:label="@string/txt_instructions"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".lemeor.subscription.SubscribeActivity"
             android:label="@string/txt_instructions"
-            android:screenOrientation="portrait" />
+             />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -119,11 +119,11 @@
 
         <activity
             android:name=".lemeor.subscription.SubscribeAboutActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".lemeor.subscription.SubscriptionInAppActivity"
             android:label="@string/txt_instructions"
-            android:screenOrientation="portrait" />
+             />
 
         <receiver android:name=".services.AlarmReceiver" />
         <receiver android:name=".services.INotificationBroadcast" />
