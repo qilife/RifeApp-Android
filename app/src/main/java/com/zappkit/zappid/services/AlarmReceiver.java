@@ -1,5 +1,7 @@
 package com.zappkit.zappid.services;
 
+import static com.zappkit.zappid.lemeor.tools.QcAlarmManager.getPendingIntentFlags;
+
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -110,7 +112,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         Intent intentMain = new Intent(context, INotificationBroadcast.class);
         intentMain.setAction(Long.toString(System.currentTimeMillis()));
         intentMain.putExtra(Constants.EXTRA_FLASH_SALE_TYPE, type);
-        PendingIntent pi = PendingIntent.getBroadcast(context, 0, intentMain, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pi = PendingIntent.getBroadcast(context, 0, intentMain, getPendingIntentFlags());
         mBuilder.setContentIntent(pi);
         NotificationManager mNotificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

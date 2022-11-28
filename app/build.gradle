@@ -41,8 +41,8 @@ android {
     productFlavors {
         app {
             applicationId 'com.rifeapp.rifeapp'
-            versionCode 1713
-            versionName "1.7.13"
+            versionCode 1714
+            versionName "1.7.14"
             buildConfigField "boolean", "IS_FREE", "false"
             buildConfigField "String", "PREF_TITLE", '"rife_app_pref"'
             resValue "string", "app_name", "Rife App"
@@ -50,8 +50,8 @@ android {
         }
         console {
             applicationId "com.zappkit.zappid"
-            versionCode 1701
-            versionName "1.7.1"
+            versionCode 1702
+            versionName "1.7.2"
 
             buildConfigField "boolean", "IS_FREE", "true"
             buildConfigField "String", "PREF_TITLE", '"rife_console_pref"'

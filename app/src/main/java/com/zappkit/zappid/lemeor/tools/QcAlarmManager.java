@@ -81,7 +81,7 @@ public class QcAlarmManager {
         }
         countAlarm++;
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, countAlarm, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, countAlarm, intent, getPendingIntentFlags());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmCal.getTimeInMillis(), pendingIntent);
         } else {
@@ -89,10 +89,14 @@ public class QcAlarmManager {
         }
     }
 
+    public static int getPendingIntentFlags() {
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE : PendingIntent.FLAG_UPDATE_CURRENT;
+    }
+
     public static void clearAlarms(Context context) {
         for (int i = 0; i <= 21; i++) {
             Intent intent = new Intent(context, AlarmReceiver.class);
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(context, i, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+            PendingIntent pendingIntent = PendingIntent.getBroadcast(context, i, intent, getPendingIntentFlags());
             AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
             alarmManager.cancel(pendingIntent);
         }
@@ -102,7 +106,7 @@ public class QcAlarmManager {
         //Remove
         Intent intent = new Intent(context, AlarmReceiver.class);
         intent.putExtra(Constants.EXTRA_FLASH_SALE_TYPE, Constants.EXTRA_REMINDER_NOTIFICATION);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Constants.REMINDER_NOTIFICATION_ID, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, Constants.REMINDER_NOTIFICATION_ID, intent, getPendingIntentFlags());
         AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
         alarmManager.cancel(pendingIntent);
         //Re-create reminder
